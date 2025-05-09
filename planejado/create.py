@@ -7,7 +7,7 @@ class Hero(SQLModel, table=True):
     id: Optional[int] = Field(default=None, primary_key=True)
     name: str
     secret_name: str
-    age: Optional[int] = None
+    age: Optional[int] = None #teste
 
 
 hero_1 = Hero(name="Deadpond", secret_name="Dive Wilson")
