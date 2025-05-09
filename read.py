@@ -10,7 +10,7 @@ class Hero(SQLModel, table=True):
     age: Optional[int] = None
 
 
-engine = create_engine("sqlite:///database.db")
+engine = create_engine("sqlite:///database.db") #engine
 
 with Session(engine) as session:
     statement = select(Hero).where(Hero.name == "Spider-Boy")
